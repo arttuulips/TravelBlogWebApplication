@@ -1,0 +1,195 @@
+/* _content/TravelBlogWebApplication/Components/Layout/MainLayout.razor.rz.scp.css */
+.page[b-yv09tq9av9] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-yv09tq9av9] {
+    flex: 1;
+}
+
+.sidebar[b-yv09tq9av9] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-yv09tq9av9] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-yv09tq9av9]  a, .top-row[b-yv09tq9av9]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-yv09tq9av9]  a:hover, .top-row[b-yv09tq9av9]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-yv09tq9av9]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row[b-yv09tq9av9] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-yv09tq9av9]  a, .top-row[b-yv09tq9av9]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-yv09tq9av9] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-yv09tq9av9] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-yv09tq9av9] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-yv09tq9av9]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-yv09tq9av9], article[b-yv09tq9av9] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+#blazor-error-ui[b-yv09tq9av9] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-yv09tq9av9] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+/* _content/TravelBlogWebApplication/Components/Layout/NavMenu.razor.rz.scp.css */
+/* Navbar container with gradient background */
+.top-row[b-4mrjavmqjd] {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar toggler */
+.navbar-toggler[b-4mrjavmqjd] {
+    appearance: none;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 2.5rem;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") no-repeat center/1.75rem rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-left: auto; /* Positions toggler on the right for small screens */
+}
+
+/* Horizontal navigation items */
+.nav-scrollable[b-4mrjavmqjd] {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto; /* Pushes the nav items to the right */
+}
+
+/* Navbar brand */
+.navbar-brand[b-4mrjavmqjd] {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+/* Individual nav items */
+.nav-item[b-4mrjavmqjd] {
+    font-size: 1rem;
+}
+
+.nav-link[b-4mrjavmqjd] {
+    color: #ffffff;
+    background: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Active and hover effects */
+.nav-link.active[b-4mrjavmqjd],
+.nav-link:hover[b-4mrjavmqjd] {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+/* Icons styling */
+.bi[b-4mrjavmqjd] {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 641px) {
+    .navbar-toggler[b-4mrjavmqjd] {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Collapsible menu for small screens */
+    .nav-scrollable[b-4mrjavmqjd] {
+        display: none;
+    }
+
+    .navbar-toggler:checked ~ .nav-scrollable[b-4mrjavmqjd] {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        z-index: 10;
+        padding: 1rem;
+    }
+
+    .nav-item[b-4mrjavmqjd] {
+        padding: 0.5rem 0;
+    }
+}

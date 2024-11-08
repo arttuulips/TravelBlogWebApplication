@@ -1,0 +1,45 @@
+﻿@inherits LayoutComponentBase
+
+<!-- Navbar at the top -->
+<div class="top-row navbar navbar-dark">
+    <div class="container-fluid d-flex align-items-center">
+        <a class="navbar-brand" href="">TravelBlogWebApplication</a>
+
+        <!-- Navbar links -->
+        <div class="nav-scrollable d-flex align-items-center">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                    Home
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="Account">
+                    Account
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="Browse">
+                    Browse
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="Write">
+                    Write
+                </NavLink>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Main Content Area -->
+<div class="main-content">
+    @Body
+</div>
+
+<!-- Error UI -->
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
